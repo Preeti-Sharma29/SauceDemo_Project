@@ -2,11 +2,11 @@ package PageObject;
 
 import java.time.Duration;
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends BasePage{
@@ -30,6 +30,11 @@ public class HomePage extends BasePage{
 	@FindBy(xpath="//input[@id='continue']")WebElement finalcontinue;
 	@FindBy(xpath="//button[@id='finish']") WebElement Finish;
 	@FindBy(xpath="//button[@id='generate-pdf-order']") WebElement GeneratePDF;
+	@FindBy(xpath="//button[@name='back-to-products']") WebElement BackHome;
+	
+	//Filters
+	@FindBy(xpath="//select[@class='product_sort_container']") WebElement sort_dropdown;
+	
 	
 	/*public void Click_Menu()
 	{
@@ -105,4 +110,16 @@ public class HomePage extends BasePage{
     {
     	GeneratePDF.click();
     }
+    public void backtohome()
+    {
+    	BackHome.click();
+    }
+    public void sort_filters(String str)
+    {   sort_dropdown.click();
+    	Select s=new Select(sort_dropdown);
+    	s.selectByVisibleText(str);
+    	s.selectByVisibleText(str);
+    	
+    }
+    
 }

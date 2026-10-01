@@ -45,8 +45,19 @@ public class TC_002_HomePage_TestCase extends Test_Base
 			HomePage hp=new HomePage(driver);
 		hp.genReport();
 		}
-				
-	
+    @Test(priority=5)
+	public void backtohome()
+	{
+    	HomePage hp=new HomePage(driver);
+    	hp.backtohome();
+	}
+    @Test(priority=6)
+	public void Filters()
+	{HomePage hp=new HomePage(driver);
+		hp.sort_filters("Price (low to high)");
+		hp.sort_filters("Price (high to low)");
+		hp.sort_filters("Name (A to Z)");
+	}
 		
 	}
 	

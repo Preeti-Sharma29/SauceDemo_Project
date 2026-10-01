@@ -14,15 +14,13 @@ import org.testng.annotations.BeforeClass;
 public class Test_Base {
 	
 	WebDriver driver;
-    
-	public Test_Base()
+  
+	//public Test_Base()
+	@BeforeClass
+	public void setup()
 	{ 
+	
 		ChromeOptions option=new ChromeOptions();
-		/*option.addArguments("--disable-notification");*/
-		//driver= new ChromeDriver(option); 
-		
-		//ChromeOptions option = new ChromeOptions();
-
 	    // Disable Chrome password manager & breach warning popup
 	    Map<String, Object> prefs = new HashMap<>();
 	    prefs.put("credentials_enable_service", false);
@@ -34,22 +32,19 @@ public class Test_Base {
 	    option.addArguments("--disable-notifications");
 	    //option.addArguments("--incognito");
 
-	    driver = new ChromeDriver(option);
-		
-		
-		
-		
+	    driver = new ChromeDriver(option);	
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	}
+		
+
     
-    
-        @BeforeClass
-		public void gotoLoginPage()
-		{driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			driver.manage().deleteAllCookies();
 			driver.get("https://www.saucedemo.com/");
-		}
+	}
+		
+        public WebDriver getDriver() {
+            return driver;
+        }
         
         @AfterClass
         public void tear_down()

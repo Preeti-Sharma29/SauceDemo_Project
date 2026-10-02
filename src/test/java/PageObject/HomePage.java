@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utilities.ScreenshotsUtility;
+
 public class HomePage extends BasePage{
 
 	public HomePage(WebDriver driver)
@@ -43,6 +45,7 @@ public class HomePage extends BasePage{
 	
 	public void Click_Menu()
 	{
+		ScreenshotsUtility.capture(driver, "05Homepage_sidemenu");
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	    wait.until(ExpectedConditions.elementToBeClickable(menuBtn));
 	    menuBtn.click();
@@ -51,74 +54,92 @@ public class HomePage extends BasePage{
 	
 	
 	public void click_logout()
-	{
+	{   ScreenshotsUtility.capture(driver, "06Logout_Successfully");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable((LogoutBtn)));
 		LogoutBtn.click();
+		ScreenshotsUtility.capture(driver, "07BacktoLoginPage");
 		
 	}
 	
 	public void add_prod1()
 	{
 		Product_1.click();
+		ScreenshotsUtility.capture(driver, "08ProductClick");
 	}
 	
     public void addincart()
     {
     	
     	addprod1.click();
+    	ScreenshotsUtility.capture(driver, "09Added_in_cart");
     }
 	
     public void click_cart()
-    {
+    {ScreenshotsUtility.capture(driver, "10OpenCart");
     	cart.click();
+    	
+    	
     }
     public void checkout()
-    {
+    {ScreenshotsUtility.capture(driver, "11CheckOutPage");
     	checkout.click();
+    	
     }
    
    public void continue_btn()
-     {
+     {ScreenshotsUtility.capture(driver, "12Continue_Checkout");
      	continue_btn.click();
+     	
      } 
     
    
      public void set_firstname(String fname)
      {  	
       firstname.sendKeys(fname);
+      ScreenshotsUtility.capture(driver, "13username_entered");
+      
      }
      public void set_lastname(String lname)
      {
      	Lastname.sendKeys(lname);
+     	 ScreenshotsUtility.capture(driver, "14Lastname_entered");
      }
    
     public void set_postalcode(String pcode)
     {
     	Postalcode.sendKeys(pcode);
+    	ScreenshotsUtility.capture(driver, "15Entered_Postalcode");
     }
    
     public void final_continue()
-    {
+    {   ScreenshotsUtility.capture(driver, "16Final");
     	finalcontinue.click();    }
     
     public void finish()
-    {
+    {   ScreenshotsUtility.capture(driver, "17Final_checkout");
     	Finish.click();
     }
     public void genReport()
-    {
+    {   ScreenshotsUtility.capture(driver, "18Generate_report");
     	GeneratePDF.click();
     }
     public void backtohome()
-    {
+    {   
     	BackHome.click();
+    	 ScreenshotsUtility.capture(driver, "19Land_on_HomePage");
     }
     public void sort_filters(String str)
-    {   sort_dropdown.click();
+    
+    {  
+    	 ScreenshotsUtility.capture(driver, "20Sorting");
+    	 sort_dropdown.click();
+    	 ScreenshotsUtility.capture(driver, "21Sorting_dropdown");
     	Select s=new Select(sort_dropdown);
     	s.selectByVisibleText(str);
+    	ScreenshotsUtility.capture(driver, "22Sorted_records1");
     	s.selectByVisibleText(str);
+    	ScreenshotsUtility.capture(driver, "23Sorted_records2");
     	
     }
     

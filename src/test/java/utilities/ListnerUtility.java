@@ -38,7 +38,7 @@ public class ListnerUtility  implements ITestListener
 	        System.out.println("FAILED: " + result.getName());
 	        System.out.println("Reason: " + result.getThrowable());
 
-	        try {
+	      /*  try {
 	            WebDriver driver = ((Test_Base) result.getInstance()).getDriver();
 	            File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
@@ -55,7 +55,7 @@ public class ListnerUtility  implements ITestListener
 	        } catch (Throwable t) {
 	            System.out.println("SCREENSHOT FAILED: " + t);
 	            t.printStackTrace();
-	        }
+	        }*/
 	    }
 
 	

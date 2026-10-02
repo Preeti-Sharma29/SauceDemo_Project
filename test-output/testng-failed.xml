@@ -8,9 +8,11 @@
     <classes>
       <class name="TestCases.TC_002_HomePage_TestCase">
         <methods>
+          <include name="Checkoutcredentials"/>
           <include name="tear_down"/>
           <include name="setup"/>
-          <include name="Filters"/>
+          <include name="Genreport"/>
+          <include name="addPro"/>
         </methods>
       </class> <!-- TestCases.TC_002_HomePage_TestCase -->
     </classes>

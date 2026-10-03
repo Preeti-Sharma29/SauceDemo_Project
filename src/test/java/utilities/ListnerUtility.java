@@ -25,11 +25,13 @@ public class ListnerUtility  implements ITestListener
 	    public void onStart(ITestContext context) 
 	    {
 	        System.out.println("Suite started: " + context.getName());
+	       
 	    }
 
 	    @Override
 	    public void onTestStart(ITestResult result) {
 	        System.out.println("Test started: " + result.getName());
+	        
 	    }
 
 	    @Override
@@ -101,6 +103,7 @@ public class ListnerUtility  implements ITestListener
 	            System.out.println("SCREENSHOT FAILED: " + t);
 	            t.printStackTrace();
 	        }
+	        WordReportUtility.generate("SauceDemo_Report", "COMPLETED");
 	    }
 	    
 	    @Override
@@ -111,6 +114,7 @@ public class ListnerUtility  implements ITestListener
 	    @Override
 	    public void onFinish(ITestContext context) {
 	        System.out.println("Suite finished: " + context.getName());
+	        WordReportUtility.generate("SauceDemo_Report", "COMPLETED");
 	    }
 	}
 

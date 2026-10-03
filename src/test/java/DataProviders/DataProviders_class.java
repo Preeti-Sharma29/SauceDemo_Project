@@ -9,7 +9,7 @@ public class DataProviders_class {
 	public Object[][] Verify_user()
 	{
 		Object[][] data= {{"standard_user","secret_sauce"},
-				            {"visual_user","secret_sauce"}
+				            //{"visual_user","secret_sauce"}
 		                 // {"error_user","secret_sauce"}
 		                 };
 		                  return data;

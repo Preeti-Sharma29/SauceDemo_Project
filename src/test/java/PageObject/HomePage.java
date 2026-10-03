@@ -33,6 +33,10 @@ public class HomePage extends BasePage{
 	@FindBy(xpath="//button[@id='finish']") WebElement Finish;
 	@FindBy(xpath="//button[@id='generate-pdf-order']") WebElement GeneratePDF;
 	@FindBy(xpath="//button[@name='back-to-products']") WebElement BackHome;
+	@FindBy(xpath="//a[text()='Dynamic Catalog']") WebElement Dynamic_btn;
+	@FindBy(xpath="//a[text()='Lazy Load']") WebElement Dynamic_opt1;
+	@FindBy(xpath="//a[text()='Spinner']") WebElement Dynamic_opt2;
+	@FindBy(xpath="//a[text()='Slider']") WebElement Dynamic_opt3;
 	
 	//Filters
 	@FindBy(xpath="//select[@class='product_sort_container']") WebElement sort_dropdown;
@@ -142,5 +146,14 @@ public class HomePage extends BasePage{
     	ScreenshotsUtility.capture(driver, "23Sorted_records2");
     	
     }
+    
+    public void dynamic_click()
+    {     
+    	Dynamic_btn.click();
+    	ScreenshotsUtility.capture(driver, "24Dynamic");
+    	Dynamic_opt1.click();
+    	ScreenshotsUtility.capture(driver, "24Options");
+    }
+    
     
 }

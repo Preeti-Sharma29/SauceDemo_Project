@@ -34,6 +34,7 @@ public class ScreenshotsUtility {
 
             dest.getParentFile().mkdirs();
             Files.copy(src.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
+            WordReportUtility.addStep(name, dest.getAbsolutePath());
 
             System.out.println("Screenshot saved: " + dest.getAbsolutePath());
             return dest.getAbsolutePath();

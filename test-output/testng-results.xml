@@ -1,51 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-03T17:22:14 IST" name="Suite" finished-at="2026-10-03T17:22:41 IST" duration-ms="27539">
+  <suite started-at="2026-10-10T17:41:12 IST" name="Suite" finished-at="2026-10-10T17:41:37 IST" duration-ms="25042">
     <groups>
     </groups>
-    <test started-at="2026-10-03T17:22:14 IST" name="Test" finished-at="2026-10-03T17:22:41 IST" duration-ms="27539">
+    <test started-at="2026-10-10T17:41:12 IST" name="Test" finished-at="2026-10-10T17:41:37 IST" duration-ms="25042">
       <class name="TestCases.TC_002_HomePage_TestCase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.TC_002_HomePage_TestCase@477b4cdf]" started-at="2026-10-03T17:22:14 IST" name="setup" finished-at="2026-10-03T17:22:16 IST" duration-ms="2288" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.TC_002_HomePage_TestCase@77c2494c]" started-at="2026-10-10T17:41:12 IST" name="setup" finished-at="2026-10-10T17:41:15 IST" duration-ms="2742" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:1, instance:TestCases.TC_002_HomePage_TestCase@477b4cdf]" started-at="2026-10-03T17:22:16 IST" name="login" finished-at="2026-10-03T17:22:18 IST" duration-ms="1412" status="PASS">
+        <test-method signature="login()[pri:1, instance:TestCases.TC_002_HomePage_TestCase@77c2494c]" started-at="2026-10-10T17:41:15 IST" name="login" finished-at="2026-10-10T17:41:17 IST" duration-ms="1784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="addPro()[pri:2, instance:TestCases.TC_002_HomePage_TestCase@477b4cdf]" started-at="2026-10-03T17:22:18 IST" name="addPro" finished-at="2026-10-03T17:22:20 IST" duration-ms="2010" status="PASS">
+        <test-method signature="addPro()[pri:2, instance:TestCases.TC_002_HomePage_TestCase@77c2494c]" started-at="2026-10-10T17:41:17 IST" name="addPro" finished-at="2026-10-10T17:41:19 IST" duration-ms="2096" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPro -->
-        <test-method signature="Checkoutcredentials()[pri:3, instance:TestCases.TC_002_HomePage_TestCase@477b4cdf]" started-at="2026-10-03T17:22:20 IST" name="Checkoutcredentials" finished-at="2026-10-03T17:22:21 IST" duration-ms="1414" status="PASS">
+        <test-method signature="Checkoutcredentials()[pri:3, instance:TestCases.TC_002_HomePage_TestCase@77c2494c]" started-at="2026-10-10T17:41:19 IST" name="Checkoutcredentials" finished-at="2026-10-10T17:41:20 IST" duration-ms="1473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Checkoutcredentials -->
-        <test-method signature="Genreport()[pri:4, instance:TestCases.TC_002_HomePage_TestCase@477b4cdf]" started-at="2026-10-03T17:22:21 IST" name="Genreport" finished-at="2026-10-03T17:22:21 IST" duration-ms="290" status="PASS">
+        <test-method signature="Genreport()[pri:4, instance:TestCases.TC_002_HomePage_TestCase@77c2494c]" started-at="2026-10-10T17:41:20 IST" name="Genreport" finished-at="2026-10-10T17:41:21 IST" duration-ms="321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Genreport -->
-        <test-method signature="backtohome()[pri:5, instance:TestCases.TC_002_HomePage_TestCase@477b4cdf]" started-at="2026-10-03T17:22:21 IST" name="backtohome" finished-at="2026-10-03T17:22:22 IST" duration-ms="464" status="PASS">
+        <test-method signature="backtohome()[pri:5, instance:TestCases.TC_002_HomePage_TestCase@77c2494c]" started-at="2026-10-10T17:41:21 IST" name="backtohome" finished-at="2026-10-10T17:41:21 IST" duration-ms="449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- backtohome -->
-        <test-method signature="Filters()[pri:6, instance:TestCases.TC_002_HomePage_TestCase@477b4cdf]" started-at="2026-10-03T17:22:22 IST" name="Filters" finished-at="2026-10-03T17:22:27 IST" duration-ms="5359" status="PASS">
+        <test-method signature="Filters()[pri:6, instance:TestCases.TC_002_HomePage_TestCase@77c2494c]" started-at="2026-10-10T17:41:21 IST" name="Filters" finished-at="2026-10-10T17:41:27 IST" duration-ms="5792" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Filters -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:TestCases.TC_002_HomePage_TestCase@477b4cdf]" started-at="2026-10-03T17:22:27 IST" name="tear_down" finished-at="2026-10-03T17:22:28 IST" duration-ms="478" status="PASS">
+        <test-method signature="scroll()[pri:7, instance:TestCases.TC_002_HomePage_TestCase@77c2494c]" started-at="2026-10-10T17:41:27 IST" name="scroll" finished-at="2026-10-10T17:41:29 IST" duration-ms="1483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scroll -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:TestCases.TC_002_HomePage_TestCase@77c2494c]" started-at="2026-10-10T17:41:29 IST" name="tear_down" finished-at="2026-10-10T17:41:30 IST" duration-ms="940" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tear_down -->
       </class> <!-- TestCases.TC_002_HomePage_TestCase -->
       <class name="TestCases.TC_003_Dynamic_catalog">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.TC_003_Dynamic_catalog@1e800aaa]" started-at="2026-10-03T17:22:28 IST" name="setup" finished-at="2026-10-03T17:22:29 IST" duration-ms="1662" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.TC_003_Dynamic_catalog@185a6e9]" started-at="2026-10-10T17:41:30 IST" name="setup" finished-at="2026-10-10T17:41:31 IST" duration-ms="1625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:TestCases.TC_003_Dynamic_catalog@1e800aaa]" started-at="2026-10-03T17:22:29 IST" name="login" data-provider="dp" finished-at="2026-10-03T17:22:31 IST" duration-ms="1127" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:TestCases.TC_003_Dynamic_catalog@185a6e9]" started-at="2026-10-10T17:41:31 IST" name="login" data-provider="dp" finished-at="2026-10-10T17:41:32 IST" duration-ms="1055" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,55 +65,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="Dynamic_content()[pri:2, instance:TestCases.TC_003_Dynamic_catalog@1e800aaa]" started-at="2026-10-03T17:22:31 IST" name="Dynamic_content" finished-at="2026-10-03T17:22:32 IST" duration-ms="1608" status="PASS">
+        <test-method signature="Dynamic_content()[pri:2, instance:TestCases.TC_003_Dynamic_catalog@185a6e9]" started-at="2026-10-10T17:41:32 IST" name="Dynamic_content" finished-at="2026-10-10T17:41:34 IST" duration-ms="2075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Dynamic_content -->
-        <test-method signature="opt1(java.lang.String)[pri:3, instance:TestCases.TC_003_Dynamic_catalog@1e800aaa]" started-at="2026-10-03T17:22:32 IST" name="opt1" finished-at="2026-10-03T17:22:32 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Cannot inject @Test annotated Method [opt1] with [class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Cannot inject @Test annotated Method [opt1] with [class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
-at org.testng.internal.Parameters.createParameters(Parameters.java:699)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:959)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="opt1()[pri:3, instance:TestCases.TC_003_Dynamic_catalog@185a6e9]" started-at="2026-10-10T17:41:34 IST" name="opt1" finished-at="2026-10-10T17:41:36 IST" duration-ms="1787" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- opt1 -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:TestCases.TC_003_Dynamic_catalog@1e800aaa]" started-at="2026-10-03T17:22:41 IST" name="tear_down" finished-at="2026-10-03T17:22:41 IST" duration-ms="371" status="PASS">
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:TestCases.TC_003_Dynamic_catalog@185a6e9]" started-at="2026-10-10T17:41:36 IST" name="tear_down" finished-at="2026-10-10T17:41:37 IST" duration-ms="841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tear_down -->

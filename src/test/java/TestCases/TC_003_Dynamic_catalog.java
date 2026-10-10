@@ -29,12 +29,14 @@ public class TC_003_Dynamic_catalog extends Test_Base
 		hp.dynamic_click();
 	}
     @Test(priority=3)
-    public void opt1(String Title)
+    public void opt1()
     {
     	Dynmaic_catalog dc=new Dynmaic_catalog(driver);
 		dc.verify_pageTitle();
-		Assert.assertEquals("Dynamic Catalog - Lazy Load", Title);
-   
+		HomePage hp=new HomePage(driver);
+		hp.Click_Menu();
+		hp.Options2();
+		
 	}
 	
 	

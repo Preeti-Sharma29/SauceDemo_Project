@@ -4,7 +4,9 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,6 +15,7 @@ import utilities.ScreenshotsUtility;
 
 public class HomePage extends BasePage{
 
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	public HomePage(WebDriver driver)
 	{
 		super(driver);
@@ -41,6 +44,9 @@ public class HomePage extends BasePage{
 	//Filters
 	@FindBy(xpath="//select[@class='product_sort_container']") WebElement sort_dropdown;
 	
+	//Scroll
+	@FindBy(xpath="//div[text()='Swag Labs']") WebElement Scrolltop;
+	@FindBy(xpath="//footer[@class='footer']") WebElement ScrollBottom;
 	
 	/*public void Click_Menu()
 	{
@@ -50,7 +56,7 @@ public class HomePage extends BasePage{
 	public void Click_Menu()
 	{
 		ScreenshotsUtility.capture(driver, "05Homepage_sidemenu");
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	   // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	    wait.until(ExpectedConditions.elementToBeClickable(menuBtn));
 	    menuBtn.click();
 	}
@@ -59,7 +65,7 @@ public class HomePage extends BasePage{
 	
 	public void click_logout()
 	{   ScreenshotsUtility.capture(driver, "06Logout_Successfully");
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable((LogoutBtn)));
 		LogoutBtn.click();
 		ScreenshotsUtility.capture(driver, "07BacktoLoginPage");
@@ -154,6 +160,22 @@ public class HomePage extends BasePage{
     	Dynamic_opt1.click();
     	ScreenshotsUtility.capture(driver, "24Options");
     }
-    
+    public void scrollpage()
+    {
+    	Actions act =new Actions(driver);
+    	//wait.until(ExpectedConditions.visibilityOfElement(ScrollBottom));
+    	
+    	act.scrollToElement(ScrollBottom).perform();
+    	ScreenshotsUtility.capture(driver, "Bottom");
+    	act.scrollToElement(Scrolltop).perform();
+    	ScreenshotsUtility.capture(driver, "Top");
+    }
+    public void Options2()
+    {     
+    	Dynamic_btn.click();
+    	ScreenshotsUtility.capture(driver, "opt");
+    	 Dynamic_opt2.click();
+    	ScreenshotsUtility.capture(driver, "opt");
+    }
     
 }

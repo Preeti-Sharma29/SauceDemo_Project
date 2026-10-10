@@ -15,7 +15,7 @@ public class Test_Base {
 	
 	WebDriver driver;
   
-	//public Test_Base()
+	
 	@BeforeClass
 	public void setup()
 	{ 

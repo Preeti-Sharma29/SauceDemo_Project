@@ -50,15 +50,23 @@ public class TC_002_HomePage_TestCase extends Test_Base
 	{
     	HomePage hp=new HomePage(driver);
     	hp.backtohome();
+    
 	}
     @Test(priority=6)
 	public void Filters()
-	{HomePage hp=new HomePage(driver);
+	{
+    	HomePage hp=new HomePage(driver);
 		hp.sort_filters("Price (low to high)");
 		hp.sort_filters("Price (high to low)");
 		hp.sort_filters("Name (A to Z)");
 	}
-		
+	@Test(priority=7)
+    public void scroll()
+    {
+    	HomePage hp=new HomePage(driver);
+	    hp.scrollpage();
+    	
+    }
 	}
 	
 	

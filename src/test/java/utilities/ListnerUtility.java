@@ -37,8 +37,7 @@ public class ListnerUtility  implements ITestListener
 	    @Override
 	    public void onTestSuccess(ITestResult result) {
 	        System.out.println("PASSED: " + result.getName());
-	        System.out.println("FAILED: " + result.getName());
-	        System.out.println("Reason: " + result.getThrowable());
+	        ExcelUtility.record(result, "PASS");
 
 	      /*  try {
 	            WebDriver driver = ((Test_Base) result.getInstance()).getDriver();
@@ -99,12 +98,14 @@ public class ListnerUtility  implements ITestListener
 	                    java.nio.file.StandardCopyOption.REPLACE_EXISTING);
 
 	            System.out.println("Screenshot saved: " + dest.getAbsolutePath());
+	            ExcelUtility.record(result, "FAILED");
 	        } catch (Throwable t) {
 	            System.out.println("SCREENSHOT FAILED: " + t);
 	            t.printStackTrace();
 	        }
 	        WordReportUtility.generate("SauceDemo_Report", "COMPLETED");
 	    }
+	    
 	    
 	    @Override
 	    public void onTestSkipped(ITestResult result) {
@@ -114,6 +115,7 @@ public class ListnerUtility  implements ITestListener
 	    @Override
 	    public void onFinish(ITestContext context) {
 	        System.out.println("Suite finished: " + context.getName());
+	        ExcelUtility.generate(); 
 	        WordReportUtility.generate("SauceDemo_Report", "COMPLETED");
 	    }
 	}

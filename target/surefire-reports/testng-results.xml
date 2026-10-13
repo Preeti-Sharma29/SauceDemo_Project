@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-12T15:56:45 IST" name="Suite" finished-at="2026-10-12T15:57:43 IST" duration-ms="58495">
+    <groups>
+    </groups>
+    <test started-at="2026-10-12T15:56:45 IST" name="Test" finished-at="2026-10-12T15:57:43 IST" duration-ms="58495">
+      <class name="TestCases.TC_002_HomePage_TestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.TC_002_HomePage_TestCase@4fb61f4a]" started-at="2026-10-12T15:56:45 IST" name="setup" finished-at="2026-10-12T15:57:19 IST" duration-ms="34451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:1, instance:TestCases.TC_002_HomePage_TestCase@4fb61f4a]" started-at="2026-10-12T15:57:19 IST" name="login" finished-at="2026-10-12T15:57:21 IST" duration-ms="1405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="addPro()[pri:2, instance:TestCases.TC_002_HomePage_TestCase@4fb61f4a]" started-at="2026-10-12T15:57:21 IST" name="addPro" finished-at="2026-10-12T15:57:23 IST" duration-ms="2608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPro -->
+        <test-method signature="Checkoutcredentials()[pri:3, instance:TestCases.TC_002_HomePage_TestCase@4fb61f4a]" started-at="2026-10-12T15:57:23 IST" name="Checkoutcredentials" finished-at="2026-10-12T15:57:25 IST" duration-ms="1608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkoutcredentials -->
+        <test-method signature="Genreport()[pri:4, instance:TestCases.TC_002_HomePage_TestCase@4fb61f4a]" started-at="2026-10-12T15:57:25 IST" name="Genreport" finished-at="2026-10-12T15:57:25 IST" duration-ms="333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Genreport -->
+        <test-method signature="backtohome()[pri:5, instance:TestCases.TC_002_HomePage_TestCase@4fb61f4a]" started-at="2026-10-12T15:57:25 IST" name="backtohome" finished-at="2026-10-12T15:57:26 IST" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backtohome -->
+        <test-method signature="Filters()[pri:6, instance:TestCases.TC_002_HomePage_TestCase@4fb61f4a]" started-at="2026-10-12T15:57:26 IST" name="Filters" finished-at="2026-10-12T15:57:34 IST" duration-ms="7762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Filters -->
+        <test-method signature="scroll()[pri:7, instance:TestCases.TC_002_HomePage_TestCase@4fb61f4a]" started-at="2026-10-12T15:57:34 IST" name="scroll" finished-at="2026-10-12T15:57:35 IST" duration-ms="1822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scroll -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:TestCases.TC_002_HomePage_TestCase@4fb61f4a]" started-at="2026-10-12T15:57:35 IST" name="tear_down" finished-at="2026-10-12T15:57:36 IST" duration-ms="573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- TestCases.TC_002_HomePage_TestCase -->
+      <class name="TestCases.TC_003_Dynamic_catalog">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.TC_003_Dynamic_catalog@6379eb]" started-at="2026-10-12T15:57:36 IST" name="setup" finished-at="2026-10-12T15:57:38 IST" duration-ms="1577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:TestCases.TC_003_Dynamic_catalog@6379eb]" started-at="2026-10-12T15:57:38 IST" name="login" data-provider="dp" finished-at="2026-10-12T15:57:39 IST" duration-ms="1105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="Dynamic_content()[pri:2, instance:TestCases.TC_003_Dynamic_catalog@6379eb]" started-at="2026-10-12T15:57:39 IST" name="Dynamic_content" finished-at="2026-10-12T15:57:41 IST" duration-ms="2109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dynamic_content -->
+        <test-method signature="opt1()[pri:3, instance:TestCases.TC_003_Dynamic_catalog@6379eb]" started-at="2026-10-12T15:57:41 IST" name="opt1" finished-at="2026-10-12T15:57:43 IST" duration-ms="1967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opt1 -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:TestCases.TC_003_Dynamic_catalog@6379eb]" started-at="2026-10-12T15:57:43 IST" name="tear_down" finished-at="2026-10-12T15:57:43 IST" duration-ms="425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- TestCases.TC_003_Dynamic_catalog -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
